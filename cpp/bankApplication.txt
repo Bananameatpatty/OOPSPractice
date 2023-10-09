@@ -1,0 +1,137 @@
+In a bank, different customers have savings account. Some customers may have taken a loan from the bank. So bank always maintains information about bank depositors and borrowers.
+
+Design a Base class Customer (name, phone-number). Derive a class Depositor (accno, balance) from Customer.
+
+Again, derive a class Borrower (loan-no, loan-amt) from Depositor.
+
+Write necessary member functions to read and display the details customer account and loan amount details. (All the necessary functions created for you)
+
+Input Format:
+
+A single line containing the user input integer
+
+constraint
+
+To get the loan, Minimum balance in savings account should greater than 1000
+
+Customer phone number must 10 digits.
+
+Loan amount greater than zero.
+
+If above three condition need to be satisfied to sanction the loan amount. otherwise write the following statement as an output "Invalid phone number or balance or loan not taken"
+
+Hint:
+
+if datamember valid_phone <10 is not valid phone number.
+
+Sample Input
+
+B 8888888888 100 10000 001 1000
+
+Sample Output:
+
+customer name:B
+
+customer phone no:8888888888
+
+customer account no:100
+
+balance:10000
+
+loan no:1
+
+loan amount:1000
+
+this is the template:
+
+#include<iostream>
+using namespace std;
+
+class customer
+{
+    protected:
+        char nm[20];
+        long phno;
+    public:
+        //Enter Enter Customer Name and Phone No hint:cin>>xxxx;
+        void acceptcustomer()
+        {
+               //@start-editable@
+
+
+
+                //@end-editable@
+        }
+        //Display the Details of customer name and phone no hint:cout<<"xxxxxx:"<<xx<<endl;
+        void displaycustomer()
+        {
+               //@start-editable@
+
+
+
+                //@end-editable@
+        }
+};
+class deposit:public customer
+{
+    protected:
+        int accno, balance;
+    public:
+        //Enter customer account no and balance hint:cin>>xxxx;
+        void acceptdeposit()
+        {
+                
+               //@start-editable@
+
+
+
+               //@end-editable@
+        }
+        //Display thee customer account no and balance hint:cout<<"xxxxxx:"<<xx<<endl;
+        void displaydeposit()
+        {
+                //@start-editable@
+
+
+
+                //@end-editable@
+        }
+        
+};
+class borrow:public deposit
+{
+        int loan_no,loan_amt,valid_phone=0;
+    public:
+    //Enter customer loan no and amount hint:cin>>xxxx;
+        void requestborrow()
+        {
+                //@start-editable@
+
+
+
+                //@end-editable@
+                
+        }
+        //Display customer loan no and amount hint:cout<<"xxxxxx:"<<xx<<endl;
+        void acceptborrow()
+        {
+               //@start-editable@
+
+
+
+               //@end-editable@
+        }
+};
+int main()
+{
+        borrow b1;
+        
+                b1.acceptcustomer();
+                b1.acceptdeposit();
+                b1.requestborrow();
+                b1.displaycustomer();
+                b1.displaydeposit();
+                b1.acceptborrow();
+                
+        return 0;
+}

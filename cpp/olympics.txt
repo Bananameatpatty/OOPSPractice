@@ -1,0 +1,148 @@
+Task:
+
+A class called olympic that has 3 private data members country, year, stadium_name for storing the details of the olympic held.
+
+A child class called games which inherits from olympic class has a single private datamember game_name for storing the name of the game participated.
+
+Another class called score that has 2 private data members points( for storing the points scored in the game) and no_of _medals.
+
+A grand child class called athlete inherited from both games and score class that has 2 private data members ath_id and ath_name for storing athlete details.
+
+A main function template is given which creates an object for class athlete and initialize the necessary data fields. Complete the definition of all the classes to get the desired output.
+
+Sample Input:
+
+Brazil
+
+2016
+
+Maracana
+
+boxing
+
+67
+
+2
+
+ATH213
+
+AKSHAY
+
+Sample Output:
+
+athlete id:ATH213
+
+athlete name:AKSHAY
+
+points scored:67
+
+no_of_medals:2
+
+name of the game:boxing
+
+name of the country:Brazil
+
+YEAR:2016
+
+name of the stadium:Maracana
+
+
+
+this is the template:
+
+#include<iostream>
+using namespace std;
+class  olympic
+{
+	private:
+		string country;
+		int year;
+		string stadium_name;
+		
+	public:
+	
+	//@start-editable@
+
+
+
+
+
+   //@end-editable@
+		
+		
+};
+
+class games:protected olympic
+{
+	private:
+	
+	string game_name;
+	
+	public:
+	
+	//@start-editable@
+
+
+
+
+
+   //@end-editable@
+	
+};
+
+class score 
+{
+	private:
+	
+	int points;
+	int no_of_medals;
+	
+	public:
+	
+	//@start-editable@
+
+
+
+
+
+   //@end-editable@
+	
+	~score()
+	{
+	    cout<<"points scored:"<<points<<endl;
+	    cout<<"no_of_medals:"<<no_of_medals<<endl;
+	}
+};
+
+class athlete : protected games, protected  score
+{
+	private:
+    string  ath_id,ath_name;
+	
+	public:
+	
+  //@start-editable@
+
+
+
+
+
+  //@end-editable@
+};
+
+int main()
+{
+    string country,stadium_name,gam_nam,athl_nam, ath_id;
+    int year,point,medal;
+    cin>>country;
+    cin>>year;
+    cin>>stadium_name;
+    cin>>gam_nam;
+    cin>>point;
+    cin>>medal;
+    cin>>ath_id;
+    cin>>athl_nam;
+    athlete a(country,year,stadium_name,gam_nam,point,medal,ath_id,athl_nam);
+
+}
+

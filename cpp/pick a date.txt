@@ -1,0 +1,48 @@
+Implement the member functions in the given Date class design.
+
+Data members:
+
+Copy
+ddmmyyyy (string) (private)
+Member function :
+
+Copy
+String get_date() - return date stored
+Bool check_date() - returns true if the date stored in the object is valid, else false
+Void set_date(int dd, int mm, int yyyy) - to manually set a date from integers
+Void read_date() - read a date from the user as 3 integer values : date, month & year and set the data member ddmmyyy.
+Void print_date() - print the date in DDMMYYYY format
+Write a menu-driven C program that creates a Date object dobj and performs operations on it. The default date should be 01 Jan 2000. Your program should repeatedly read a character from the user and do the following:
+
+R - Read a date into dobj from the user using read_date(). Store the new date only if it is valid, else do nothing.
+
+S - Read 3 integers from the user and Set the dobj date using set_date().Store the new date only if it is valid, else do nothing
+
+C - Check whether the dobj holds a valid date. Print “VALID/INVALID”
+
+P - Print the dobj date in DDMMYYYY format
+
+X - Exit the program
+
+INPUT SAMPLE:
+
+Copy
+R
+12 04 2003
+P
+S
+24 12 2001
+P
+C
+X
+OUTPUT SAMPLE:
+
+Copy
+12042003
+24122001
+VALID
+
+
+this is the template:
+
+<-- no template -->

@@ -1,0 +1,73 @@
+TASK
+
+To Learn Access specifier in Hierarchical Inheritance
+
+Write a program to implement payroll calculation for employee and student details in a origination using hierarchical Inheritance.
+
+Step 1.Declare base class name called person, it has one integer data called employee_no, and two char array called employee_Name and designation declared as private. Followed by base class contain one public method getpersonalDetails() .
+
+Step 2.Child class employee having five float private data member called, basic_pay,hra, da,pf and net_pay and two public method called,getEmployeeDetails(), calculate_payroll()
+
+Step 3.Your output : net_pay = basic_pay + hra + da - pf;
+
+Step 4.Another child class called student having three private char array data member called, student_name, college, course and two public method called getstudentDetails(),student_display().
+
+Step 5.Your output: student name, college name,course name
+
+Step 6.Format of Input for employee—only below given value accepted
+
+employee_no {from 0001 to 1000}
+
+employee_name {abc,bcd,cde,efg }
+
+designation {admin,officestaff,manager}
+
+Step 7.Format of Input for student —only below given value accepted
+
+Student_name {a,b,c,d,e}
+
+College_name {amrita}
+
+Course {cse}
+
+Input Format:
+
+A single line containing the space separated integers
+
+constraint
+
+Nil
+
+Output Format:
+
+A single line containing the solution
+
+Sample Input:
+
+a amrita cse 0001 abc officestaff 12000 1200 1100 900
+
+Sample Output: a amrita cse 13400
+
+
+this is the template
+
+#include<iostream>
+using namespace std;
+//Implement your Hierarchical Inheritance
+//@start-editable@
+
+
+
+//@end-editable@
+        
+int main() {
+   
+    Student s;
+    Employee e;
+    s.getStudentDetails();
+    s.student_display();
+    e.getEmployeeDetails();
+    e.calculate();
+    
+    return 0;
+}

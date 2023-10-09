@@ -1,0 +1,97 @@
+TASK
+
+To Learn Access specifier and constructor in Hybrid Inheritance
+Write the syntax for following:
+Syntax:(one line code)
+
+class B is derived from class A
+
+class D is derived from class B and class C
+
+3.Write constructor in respective location and initialize the value (Hint: specified above the editable location)
+
+Input Format:
+
+no input from user
+
+constraint
+
+Nil
+
+Output Format:
+
+A single line containing the solution
+
+Sample Input:
+
+1 2
+
+Sample Output:
+
+2
+
+this is the template:
+
+#include <iostream>
+using namespace std;
+class A
+{
+    protected:
+    int A_value;
+};
+
+// write class syntax B is derived from class A (one line code)
+//@start-editable@
+
+
+
+//@end-editable@
+{
+    public:
+    // Write here parameter constructor to initialize A_value
+    //@start-editable@
+
+
+
+    //@end-editable@
+};
+
+class C
+{
+    protected:
+    int C_value;
+   
+     //Write here parameter constructor to initialize C_value
+    //@start-editable@
+
+
+
+    //@end-editable@
+  
+};
+
+// write class syntax D is derived from class B and class C (one line code)
+//@start-editable@
+
+
+//@end-editable@ 
+{
+    public:
+    //Write here parameter constructor, it should pass "a" value to "class B" and "c" value to "class C"  and member function void product()
+    //@start-editable@
+
+
+
+    //@end-editable@
+};
+
+int main()
+{
+    int input1,input2;
+    cin>>input1;
+    cin>>input2;
+    D d(input1,input2); // Object d of derived class D. calling parameter constructor
+    d.product();
+    return 0;
+}
+
