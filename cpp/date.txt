@@ -1,0 +1,46 @@
+Use the template given to fill the blank spaces and complete the code
+
+Task
+
+implement a date class. Its member data should consist of three ints: month, day, and year. It should also have two member functions: getdate(), which allows the user to enter a date in dd/mm/yyyy format, and showdate(), which displays the date.
+
+Input:
+
+4/11/03
+
+Output
+
+4/11/03
+
+this is the template:
+
+#include<iostream>
+using namespace std;
+class date{
+//@start-editable@
+
+ 
+ //@end-editable@
+ 
+ public:
+  void setDate(){
+   //cout << "Enter Date In This Format dd/mm/yyyy" << endl;
+   cin >> day>>c>>month>>c>>year;
+  }
+  void getDate(){
+   //cout << "Date Entered Is" << endl;
+   cout << day << c << month << c << year << endl;
+  }
+};
+
+int main()
+{
+ 
+ //@start-editable@
+
+ 
+ //@end-editable@
+
+
+}
+

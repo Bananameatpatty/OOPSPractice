@@ -1,0 +1,91 @@
+TASK
+
+To Learn Access specifier in Multiple Inheritance
+To find out the student details using multiple inheritance.
+Step 1: Start the program.
+
+Step 2: Declare the base class student.
+
+Step 3: Declare and define the function get() to get the student details (int Mark1,int Mark2).
+
+Step 4: Declare the other class sports.
+
+Step 5: Declare and define the function getsm() to read the sports mark (int sport_mark).
+
+Step 6: Create the class statement derived from student and sports.
+
+Step 7: Declare and define the function display() to find out the total and average and display only average as output (int total_marks, float average())
+
+(total_marks=(mark1+mark1+sport_mark),average=total_mark/3).
+
+Step 8: Declare the derived class object,call the functions get(),getsm() and display().
+
+Step 9: Stop the program.
+
+Input Format:
+
+A single line containing the space separated integers
+
+constraint
+
+0<=marks1 and mark2<=95
+
+0<=sport_mark<=5
+
+total_mark>0
+
+Output Format:
+
+A single line containing the solution
+
+Sample Input:
+
+60 95 5
+
+Sample Output:
+
+53.33
+
+
+this is the template:
+
+#include<iostream>
+using namespace std;
+
+class student 
+{
+    //@start-editable@
+
+
+
+    //@end-editable@
+};
+
+class sports 
+{
+    //@start-editable@
+
+
+
+    //@end-editable@
+
+};
+
+class statement : public student, public sports 
+{
+    //@start-editable@
+
+
+
+    //@end-editable@
+ 
+};
+
+int main() {
+    statement obj;
+    obj.get();
+    obj.getsm();
+    obj.display();
+    return 0;
+}
+

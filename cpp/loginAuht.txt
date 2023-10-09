@@ -1,0 +1,97 @@
+To design User login authentication using C++ class and Object concepts. The partial code designed for you and you are requested to complete the following task
+
+Initialize the user name and password using constructor
+
+To validate username and return respective username or "invalid" as an output in validate_username member function
+
+To validate password and return respective password or "invalid" as an output in validate_password member function
+
+Input Format:
+
+Nil
+
+constraint
+
+Length of the username is minimum of 4 character or numbers
+
+Length of the password is minimum of 4 character or numbers
+
+Username and password should not the same
+
+Encrypt the password using reverse of string concept (example: abcde can encrypted as edcba)
+
+Sample Input
+
+test123 abcde
+
+Sample Output:
+
+test123 edcba
+
+this is the template:
+
+#include <iostream> 
+#include <string> 
+using namespace std;
+
+class user_login
+{
+    private:
+    string USERNAME,PASSWORD;
+    public:
+    
+    //Constructor wil intialize the string
+    user_login(string u,string p)
+    {
+        //@start-editable@
+
+
+
+       //@end-editable@
+    }
+    //Function to validate username and return respective username or "invalid" as an output
+    string validate_username()
+    {
+        //@start-editable@
+
+
+
+        //@end-editable@
+        
+        
+    }
+    
+    //Function to validate password and return respective password or "invalid" as an output
+    string validate_password()
+    {
+       
+       //@start-editable@
+
+
+
+       //@end-editable@
+        
+    }
+    
+};
+
+int main()
+{
+  
+	string username,password;
+	
+	//"Enter Username and password
+	
+	cin>>username>>password;
+	
+	user_login u1(username,password);
+	string usr=u1.validate_username();
+	string pwd=u1.validate_password();
+	
+	if(usr!="invalid" &&pwd!="invalid")
+	    cout<<usr<<"   "<<pwd;
+	else 
+	    cout<<"login authentication failed";
+	
+	return 0;
+}
